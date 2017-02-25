@@ -8,7 +8,7 @@ Requires ghostscript, turbojpeg, PIL, and Python 3.
 
 Uses the "shattered" PDF prologue from shattered.io - credit to Marc Stevens et al. for the collision.
 
-Similar to, but more flexible than the collision generator from http://alf.nu/SHA1.
+Similar to, but more flexible (supports more than one page, arbitrary-sized inputs, etc.) than the collision generator from http://alf.nu/SHA1.
 
 ## Usage
 
