@@ -295,11 +295,11 @@ def doit(outdir, args):
     for page in page_descs:
         add_image_page(pdf, pages_oid, masterw, masterh, *page)
 
-    with open('out-' + args.file1, 'wb') as outfile:
+    with open('out-' + os.path.basename(args.file1), 'wb') as outfile:
         pdf.serialize(outfile)
 
     jpeg.data = jpeg2 + jpeg_footer
-    with open('out-' + args.file2, 'wb') as outfile:
+    with open('out-' + os.path.basename(args.file2), 'wb') as outfile:
         pdf.serialize(outfile)
 
 def main(argv):
