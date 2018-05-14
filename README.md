@@ -12,7 +12,7 @@ Similar to, but more flexible (supports more than one page, arbitrary-sized inpu
 
 ## Usage
 
-Just run `python3 collide.py PDF1.pdf PDF2.pdf`, and it will generate `out-PDF1.pdf` and `out-PDF2.pdf`. These will contain the same content as the original input PDFs, but will have the same SHA1 hash.
+Just run `python3 collide.py PDF1.pdf PDF2.pdf`, and it will generate `out-PDF1.pdf` and `out-PDF2.pdf`. These will contain the same content as the original input PDFs, but will have the same SHA1 hash. If the resulting PDFs don't work for you (e.g. they look corrupt, images have artifacts, etc.), try `--progressive` mode.
 
 ## Remarks
 
