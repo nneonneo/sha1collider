@@ -16,7 +16,7 @@ Just run `python3 collide.py PDF1.pdf PDF2.pdf`, and it will generate `out-PDF1.
 
 ## Remarks
 
-There are two encoding modes: a highly reliable "restart interval" mode and a less reliable "progressive" mode, switched by way of `--progressive`.
+There are two encoding modes: a more flexible "restart interval" mode and a more compatible "progressive" mode, switched by way of `--progressive`.
 
 Restart intervals allow the image data to be reliably broken up into small chunks. However, some PDF renderers, such as my version of GhostScript, cannot parse the resulting JPEG correctly (as it has comments preceding the restart markers).
 
