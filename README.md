@@ -21,3 +21,9 @@ There are two encoding modes: a more flexible "restart interval" mode and a more
 Restart intervals allow the image data to be reliably broken up into small chunks. However, some PDF renderers, such as my version of GhostScript, cannot parse the resulting JPEG correctly (as it has comments preceding the restart markers).
 
 Progressive mode works with many smaller PDFs (at lower resolution, for example), but breaks down with larger images. However, it produces PDFs that are broadly compatible because it does not involve bending the JPEG spec. This is the mode used by Google+CWI in generating their own PoC PDF pair.
+
+## Example
+
+In a typical "attack", suppose Eve lends Alice $100, and secures from Alice a promise to pay her back. Eve asks Alice to digitally sign [this IOU document](examples/out-eve100.pdf), which Alice does so with SHA-1.
+
+Later, Eve presents [this other document](examples/out-eve1b.pdf) to the bank along with the digital signature - the signature is valid, but the amount has changed!
